@@ -1,0 +1,30 @@
+name: GitHub Readme Stats Update
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Runs every day at midnight
+  workflow_dispatch: # Allows you to run it manually
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Generate Stats Images
+        uses: anuraghazra/github-readme-stats@master
+        with:
+          gh_token: ${{ secrets.GH_TOKEN }}
+          output: ./generated/ # This saves images to a folder named 'generated'
+          username: i-satwinder
+          theme: dracula
+          show_icons: true
+          
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add .
+          git commit -m "Update GitHub Stats" || exit 0
+          git push
