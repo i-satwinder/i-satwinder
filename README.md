@@ -24,8 +24,8 @@ I am a passionate developer dedicated to building scalable, user-friendly applic
 - ⚙️ Developing robust backend architectures in **Go**.
 
 ### 📊 GitHub Activity
-![Satwinder's GitHub stats](https://github-readme-stats.vercel.app/api?username=i-satwinder&show_icons=true&theme=dracula)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=i-satwinder&layout=compact&theme=dracula)
+![Satwinder's GitHub stats](./generated/stats.svg)
+![Top Langs](./generated/languages.svg)
 
 ---
 
