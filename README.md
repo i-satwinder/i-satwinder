@@ -25,7 +25,6 @@ I am a passionate developer dedicated to building scalable, user-friendly applic
 
 ### 📊 GitHub Activity
 ![Satwinder's GitHub stats](github-metrics.svg)
-![Top Langs](./generated/languages.svg)
 
 ---
 
